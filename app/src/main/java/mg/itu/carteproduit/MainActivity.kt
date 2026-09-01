@@ -97,11 +97,6 @@ fun ProduitCard(produit: Produit) {
             Spacer(Modifier.height(12.dp))
 
             // TODO A :
-            // 1. Déclarez EN HAUT de la fonction (au-dessus de la Card) :
-            //      var quantite by remember { mutableStateOf(0) }
-            // 2. Remplacez les deux lignes ci-dessous par :
-            //      Text("Quantité : $quantite kg")
-            //      Button(onClick = { quantite++ }) { Text("Ajouter 1 kg") }
 
             var quantite by  remember { mutableIntStateOf(0) }
             Text("Quantité : $quantite kg")
